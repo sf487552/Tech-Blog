@@ -1,20 +1,42 @@
+:root {
+    --primary: white;
+    --secondary: #ffffff;
+    --tertiary: #ffffff;
+    --light-dark: #bdb9b9;
+    --dark: #201110;
+    --border-radius: .3rem;
+}
+
 * {
 box-sizing: border-box;
 }
 
-body, html {
-height: 100%;
-padding: 0;
+body {
+background-color: var(--primary);
 margin: 0;
-font-family: sans-serif;
-color: #333;
+padding: 0;
+font-family: "IBM Plex Sans", sans-serif;
+color: var(--dark);
+line-height: 1.5;
+font-size: 20px;
+}
+
+header {
+    padding: 1%;
+    border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
 }
 
 a {
 text-decoration: none;
-color: #225ca3;
+color: #1a3658;
 font-weight: bold;
 transition: color .1s;
+}
+
+.nav {
+padding: 10px;
+line-height: 1.25;
+float: top;
 }
 
 a:hover {
@@ -55,6 +77,7 @@ border: 1px solid #3486eb;
 textarea {
 min-width: 40%;
 min-height: 100px;
+font-size: 1.2rem;
 }
 
 form > div {
@@ -110,11 +133,11 @@ color: #3486eb;
 }
 
 .delete-post-btn {
-background-color: #d41414;
+background-color: #c51717;
 }
 
 .delete-post-btn:hover {
-background-color: #ff643d;
+background-color: #80ddfa;
 }
 
 .post {
@@ -134,12 +157,12 @@ margin: -1.5% 0 2% 0;
 }
 
 .upvote-btn {
-background-color: #197d0f;
+background-color: #494a4b;
 transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-background-color: #1f9c13;
+background-color: #494a4b;
 }
 
 .comment-form {

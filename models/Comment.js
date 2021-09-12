@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-// create Comment model
+// create Comment
 class Comment extends Model {}
 
 Comment.init(

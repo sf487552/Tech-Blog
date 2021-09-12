@@ -1,4 +1,3 @@
-// use index.js to create associations between models
 // import all models
 const Post = require('./Post');
 const User = require('./User');
@@ -13,12 +12,6 @@ Post.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
 });
-
-// User.belongsToMany(Post, {
-//   through: Comment,
-//   foreignKey: 'user_id',
-//   onDelete: 'SET NULL'
-// });
 
 Comment.belongsTo(User, {
   foreignKey: 'user_id',
